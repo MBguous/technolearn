@@ -37,6 +37,9 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
         
         item5.addItem()
         
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.itemsTable.editing = true
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -80,7 +83,16 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
             itemsTable.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
-
+    
+    
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        let movedObject = addedItems[sourceIndexPath.row]
+        addedItems.removeAtIndex(sourceIndexPath.row)
+        addedItems.insert(movedObject, atIndex: destinationIndexPath.row)
+        NSLog("%@", "\(sourceIndexPath.row) => \(destinationIndexPath.row) \(addedItems)")
+        // To check for correctness enable: self.tableView.reloadData()
+    }
     /*
     // MARK: - Navigation
 
