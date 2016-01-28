@@ -80,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D392F1E1C5A4091000582A8 /* TableViewTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				711E10E91C56572300A84B8B /* TableViewTutorial.swift */,
+				3DC7373B1C57646A0078485E /* ItemTableViewCell.swift */,
+				3D9EBD1B1C5A07370011780B /* Item.swift */,
+			);
+			name = TableViewTutorial;
+			sourceTree = "<group>";
+		};
 		711E10AF1C56562900A84B8B = {
 			isa = PBXGroup;
 			children = (
@@ -105,13 +115,11 @@
 			children = (
 				711E10BB1C56562900A84B8B /* AppDelegate.swift */,
 				711E10BD1C56562900A84B8B /* ViewController.swift */,
-				711E10E91C56572300A84B8B /* TableViewTutorial.swift */,
+				3D392F1E1C5A4091000582A8 /* TableViewTutorial */,
 				711E10BF1C56562900A84B8B /* Main.storyboard */,
-				3DC7373B1C57646A0078485E /* ItemTableViewCell.swift */,
 				711E10C21C56562900A84B8B /* Assets.xcassets */,
 				711E10C41C56562900A84B8B /* LaunchScreen.storyboard */,
 				711E10C71C56562900A84B8B /* Info.plist */,
-				3D9EBD1B1C5A07370011780B /* Item.swift */,
 			);
 			path = technolearn;
 			sourceTree = "<group>";

@@ -15,11 +15,13 @@ class Item: NSObject {
     var name: String
     var image: UIImage
     var desc: String
+    var fav: Bool
     
-    init(name: String, image: UIImage, desc: String) {
+    init(name: String, image: UIImage, desc: String, fav: Bool) {
         self.name = name
         self.image = image
         self.desc = desc
+        self.fav = false
     }
     
     func addItem() {

@@ -10,7 +10,8 @@ import UIKit
 
 class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var tableview:UITableView?
+//    var tableview: UITableView?
+    @IBOutlet weak var itemsTable: UITableView!
 
     
     override func viewDidLoad() {
@@ -18,15 +19,28 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
 
         // Do any additional setup after loading the view.
         
-        let item1: Item = Item(name: "iPhone", image: UIImage(named: "iphone")!, desc: "Awesome iPhone")
+        let item1: Item = Item(name: "iPhone", image: UIImage(named: "iphone")!, desc: "Awesome iPhone", fav: false)
         item1.addItem()
         
-        let item2: Item = Item(name: "macbook", image: UIImage(named: "macbook")!, desc: "Macbook Pro bought recently")
+        let item2: Item = Item(name: "macbook", image: UIImage(named: "macbook")!, desc: "Macbook Pro bought recently", fav: false)
         item2.addItem()
         
-        let item3: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently")
+        let item3: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently", fav: false)
+        
         item3.addItem()
         
+        let item4: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently", fav: false)
+        
+        item4.addItem()
+        
+        let item5: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently", fav: false)
+        
+        item5.addItem()
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //itemsTable.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,14 +56,29 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell", forIndexPath: indexPath) as! ItemTableViewCell
-
-        
-        cell.itemLabel.text = addedItems[indexPath.row].name
-        cell.itemImage.image = addedItems[indexPath.row].image
-        cell.itemDescription.text = addedItems[indexPath.row].desc
+        let item = addedItems[indexPath.row]
+        cell.itemLabel.text = item.name
+        cell.itemImage.image = item.image
+        cell.itemDescription.text = item.desc
+        cell.item = item
+        cell.tableView = tableView
+        if item.fav {
+            cell.btnFav.backgroundColor = UIColor.purpleColor()
+        } else {
+            cell.btnFav.backgroundColor = UIColor.blackColor()
+        }
         
         return cell
         
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if(editingStyle == UITableViewCellEditingStyle.Delete) {
+            
+            addedItems.removeAtIndex(indexPath.row)
+            itemsTable.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
     }
 
     /*
