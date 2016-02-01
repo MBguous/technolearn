@@ -16,29 +16,15 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Item.populateItems()
         // Do any additional setup after loading the view.
         
-        let item1: Item = Item(name: "iPhone", image: UIImage(named: "iphone")!, desc: "Awesome iPhone", fav: false)
-        item1.addItem()
-        
-        let item2: Item = Item(name: "macbook", image: UIImage(named: "macbook")!, desc: "Macbook Pro bought recently", fav: false)
-        item2.addItem()
-        
-        let item3: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently", fav: false)
-        
-        item3.addItem()
-        
-        let item4: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently", fav: false)
-        
-        item4.addItem()
-        
-        let item5: Item = Item(name: "samsung", image: UIImage(named: "samsung")!, desc: "Samsung phone bought recently", fav: false)
-        
-        item5.addItem()
-        
+
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        self.itemsTable.editing = true
+        //self.itemsTable.editing = true
+        
+//        let ratingControl = RatingVIew(frame: CGRectMake(0,300,150, 30))
+//        self.view.addSubview(ratingControl)
         
     }
     
@@ -74,6 +60,8 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
         return cell
         
     }
+    
+
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         

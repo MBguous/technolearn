@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var topicsLearned = ["TableViewController","CollectionViewController"]
     var selectedTopic:String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        SCLAlertView().showInfo("Important info", subTitle: "You are great")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
