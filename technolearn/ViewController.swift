@@ -10,11 +10,48 @@ import UIKit
 import SCLAlertView
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    var topicsLearned = ["TableViewController","CollectionViewController"]
-    var selectedTopic:String?
+    var topicsLearned = ["TableViewController", "CollectionViewController", "API Tutorial", "BattiGayo"]
+    var selectedTopic: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        SCLAlertView().showInfo("Important info", subTitle: "You are great")
+        
+//        SCLAlertView().showInfo("Important info", subTitle: "You are great")
+        SCLAlertView().showSuccess("TechnoLearn", subTitle: "These are some of the topics learned so far.")
+//        SCLAlertView().showError("Hello Error", subTitle: "This is a more descriptive error text.") // Error
+//        SCLAlertView().showNotice("Hello Notice", subTitle: "This is a more descriptive notice text.") // Notice
+//        SCLAlertView().showWarning("Hello Warning", subTitle: "This is a more descriptive warning text.") // Warning
+//        SCLAlertView().showInfo("Hello Info", subTitle: "This is a more descriptive info text.") // Info
+//        SCLAlertView().showEdit("Hello Edit", subTitle: "This is a more descriptive info text.") // Edit
+        
+//        SCLAlertView().showTitle(
+//            "Congratulations", // Title of view
+//            subTitle: "Operation successfully completed.", // String of view
+//            duration: 2.0, // Duration to show before closing automatically, default: 0.0
+//            completeText: "Done", // Optional button value, default: ""
+//            style: .Success, // Styles - see below.
+//            colorStyle: 0xA429FF,
+//            colorTextButton: 0xFFFFFF
+//        )
+        
+//        let alertView = SCLAlertView()
+//        alertView.addButton("First Button", target:self, selector:Selector("firstButton"))
+//        alertView.addButton("Second Button") {
+//            print("Second button tapped")
+//        }
+//        alertView.showSuccess("Button View", subTitle: "This alert view has buttons")
+        
+//        let alertView = SCLAlertView()
+//        alertView.showCloseButton = false
+//        alertView.showSuccess("No button", subTitle: "You will have hard times trying to close me")
+        
+        // Add a text field
+//        let alert = SCLAlertView()
+//        let txt = alert.addTextField("Enter your name")
+//        alert.addButton("Show Name") {
+//            print("Text value: \(txt.text)")
+//        }
+//        alert.showEdit("Edit View", subTitle: "This alert view shows a text box")
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -44,9 +81,10 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let viewController = segue.destinationViewController
         viewController.title = selectedTopic!
     }
-    
 
 }
+
+
 
 //extension UIButton {
 //    @IBInspectable var borderWidth : CGFloat {
@@ -57,7 +95,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 //            self.borderWidth = newValue
 //        }
 //    }
-//
+
 //    @IBInspectable var borderColor: UIColor {
 //        get {
 //            return self.layer.borderColor!
@@ -66,7 +104,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 //            self.borderColor = newValue
 //        }
 //    }
-//    
+    
 //    @IBInspectable var cornerRadius: CGFloat {
 //        get {
 //            return self.layer.cornerRadius
@@ -78,19 +116,19 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 //}
 
 
-//
+
 //    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
 //        didSet {
 //            layer.borderColor = borderColor.CGColor
 //        }
 //    }
-//    
-////    @IBInspectable var borderWidth: CGFloat = 0 {
-////        didSet {
-////            layer.borderWidth = borderWidth
-////        }
-////    }
-//    
+
+//    @IBInspectable var borderWidth: CGFloat = 0 {
+//        didSet {
+//            layer.borderWidth = borderWidth
+//        }
+//    }
+    
 //    @IBInspectable var cornerRadius: CGFloat = 0 {
 //        didSet {
 //            layer.cornerRadius = cornerRadius

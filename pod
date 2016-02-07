@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'technolearn' do
+pod 'Alamofire', '~> 3.0'
+end

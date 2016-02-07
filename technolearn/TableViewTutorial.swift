@@ -54,7 +54,7 @@ class TableViewTutorial: UIViewController, UITableViewDelegate, UITableViewDataS
         if item.fav {
             cell.btnFav.backgroundColor = UIColor.purpleColor()
         } else {
-            cell.btnFav.backgroundColor = UIColor.blackColor()
+            cell.btnFav.backgroundColor = UIColor.darkGrayColor()
         }
         
         return cell

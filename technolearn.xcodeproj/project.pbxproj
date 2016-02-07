@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5FA09B1C636A090065EEA1 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5FA09A1C636A090065EEA1 /* QuizViewController.swift */; };
 		3D92F6EB1C5DEB4300548D18 /* ItemRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92F6EA1C5DEB4300548D18 /* ItemRating.swift */; };
 		3D92F6ED1C5DEB5C00548D18 /* ItemRating.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D92F6EC1C5DEB5C00548D18 /* ItemRating.xib */; };
 		3D9EBD1C1C5A07370011780B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EBD1B1C5A07370011780B /* Item.swift */; };
 		3DC7373C1C57646A0078485E /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7373B1C57646A0078485E /* ItemTableViewCell.swift */; };
+		3DCAB0FA1C60ADD700F891D3 /* TestWebServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAB0F91C60ADD700F891D3 /* TestWebServiceViewController.swift */; };
+		3DD3C2F11C61DE8400C59196 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3C2F01C61DE8400C59196 /* TimeTable.swift */; };
+		3DD3C2F51C622A6E00C59196 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3C2F41C622A6E00C59196 /* Media.xcassets */; };
 		3DF59F7E1C5B743A00A9E310 /* RatingControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF59F7D1C5B743A00A9E310 /* RatingControl.xib */; };
 		3DF59F801C5B75B600A9E310 /* RatingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF59F7F1C5B75B600A9E310 /* RatingVIew.swift */; };
 		3DF59F821C5B7B9800A9E310 /* RatingControlContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF59F811C5B7B9800A9E310 /* RatingControlContoller.swift */; };
 		3DF64AAB1C5F7DCC004256A7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF64AAA1C5F7DCC004256A7 /* MyCollectionViewCell.swift */; };
 		3DF64AAF1C5F7E80004256A7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF64AAE1C5F7E80004256A7 /* CollectionViewController.swift */; };
+		3DFBA7591C610A2F00107B17 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBA7581C610A2F00107B17 /* CustomButton.swift */; };
+		3DFBA75B1C614E9B00107B17 /* BattiGayoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBA75A1C614E9B00107B17 /* BattiGayoViewController.swift */; };
 		655FDDBD6860C9CF4FB395CC /* Pods_technolearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47759A7FBBB7BE3088F71126 /* Pods_technolearn.framework */; };
 		711E10BC1C56562900A84B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711E10BB1C56562900A84B8B /* AppDelegate.swift */; };
 		711E10BE1C56562900A84B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711E10BD1C56562900A84B8B /* ViewController.swift */; };
@@ -44,17 +50,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3DCAB0F51C6098D400F891D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		30BD31A57ECC187F5739E09B /* Pods-technolearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-technolearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-technolearn/Pods-technolearn.release.xcconfig"; sourceTree = "<group>"; };
+		3D5FA09A1C636A090065EEA1 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		3D92F6EA1C5DEB4300548D18 /* ItemRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRating.swift; sourceTree = "<group>"; };
 		3D92F6EC1C5DEB5C00548D18 /* ItemRating.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemRating.xib; sourceTree = "<group>"; };
 		3D9EBD1B1C5A07370011780B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3DC7373B1C57646A0078485E /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		3DCAB0F91C60ADD700F891D3 /* TestWebServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestWebServiceViewController.swift; sourceTree = "<group>"; };
+		3DD3C2F01C61DE8400C59196 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		3DD3C2F41C622A6E00C59196 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		3DF59F7D1C5B743A00A9E310 /* RatingControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingControl.xib; sourceTree = "<group>"; };
 		3DF59F7F1C5B75B600A9E310 /* RatingVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingVIew.swift; sourceTree = "<group>"; };
 		3DF59F811C5B7B9800A9E310 /* RatingControlContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControlContoller.swift; sourceTree = "<group>"; };
 		3DF64AAA1C5F7DCC004256A7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DF64AAE1C5F7E80004256A7 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../CollectionViewController.swift; sourceTree = "<group>"; };
+		3DFBA7581C610A2F00107B17 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3DFBA75A1C614E9B00107B17 /* BattiGayoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattiGayoViewController.swift; sourceTree = "<group>"; };
 		47759A7FBBB7BE3088F71126 /* Pods_technolearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_technolearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711E10B81C56562900A84B8B /* technolearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = technolearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711E10BB1C56562900A84B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +144,15 @@
 			name = TableViewTutorial;
 			sourceTree = "<group>";
 		};
+		3DCAB0FB1C60AF5300F891D3 /* API Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB0F91C60ADD700F891D3 /* TestWebServiceViewController.swift */,
+				3D5FA09A1C636A090065EEA1 /* QuizViewController.swift */,
+			);
+			name = "API Tutorial";
+			sourceTree = "<group>";
+		};
 		3DF59F831C5B7B9C00A9E310 /* Ratings */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +161,24 @@
 				3DF59F811C5B7B9800A9E310 /* RatingControlContoller.swift */,
 			);
 			name = Ratings;
+			sourceTree = "<group>";
+		};
+		3DF64AB51C5FCB6F004256A7 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3DF64AAE1C5F7E80004256A7 /* CollectionViewController.swift */,
+				3DF64AAA1C5F7DCC004256A7 /* MyCollectionViewCell.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		3DFBA75C1C614EB600107B17 /* BattiGayo */ = {
+			isa = PBXGroup;
+			children = (
+				3DFBA75A1C614E9B00107B17 /* BattiGayoViewController.swift */,
+				3DD3C2F01C61DE8400C59196 /* TimeTable.swift */,
+			);
+			name = BattiGayo;
 			sourceTree = "<group>";
 		};
 		5A77A3E2A7B9ED002D108D95 /* Pods */ = {
@@ -168,9 +220,12 @@
 				3DF59F831C5B7B9C00A9E310 /* Ratings */,
 				3D392F1E1C5A4091000582A8 /* TableViewTutorial */,
 				711E10BF1C56562900A84B8B /* Main.storyboard */,
-				3DF64AAE1C5F7E80004256A7 /* CollectionViewController.swift */,
-				3DF64AAA1C5F7DCC004256A7 /* MyCollectionViewCell.swift */,
+				3DFBA75C1C614EB600107B17 /* BattiGayo */,
+				3DFBA7581C610A2F00107B17 /* CustomButton.swift */,
+				3DCAB0FB1C60AF5300F891D3 /* API Tutorial */,
+				3DF64AB51C5FCB6F004256A7 /* CollectionView */,
 				711E10C21C56562900A84B8B /* Assets.xcassets */,
+				3DD3C2F41C622A6E00C59196 /* Media.xcassets */,
 				711E10C41C56562900A84B8B /* LaunchScreen.storyboard */,
 				711E10C71C56562900A84B8B /* Info.plist */,
 			);
@@ -208,6 +263,7 @@
 				711E10B61C56562900A84B8B /* Resources */,
 				E6D7E5D52EA697300B877552 /* Embed Pods Frameworks */,
 				98538021F129DEBF40097CAB /* Copy Pods Resources */,
+				3DCAB0F51C6098D400F891D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +362,7 @@
 				3D92F6ED1C5DEB5C00548D18 /* ItemRating.xib in Resources */,
 				711E10C61C56562900A84B8B /* LaunchScreen.storyboard in Resources */,
 				711E10C31C56562900A84B8B /* Assets.xcassets in Resources */,
+				3DD3C2F51C622A6E00C59196 /* Media.xcassets in Resources */,
 				711E10C11C56562900A84B8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,13 +437,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7373C1C57646A0078485E /* ItemTableViewCell.swift in Sources */,
+				3DCAB0FA1C60ADD700F891D3 /* TestWebServiceViewController.swift in Sources */,
 				3DF59F821C5B7B9800A9E310 /* RatingControlContoller.swift in Sources */,
 				3DF64AAB1C5F7DCC004256A7 /* MyCollectionViewCell.swift in Sources */,
 				711E10BE1C56562900A84B8B /* ViewController.swift in Sources */,
 				3DF64AAF1C5F7E80004256A7 /* CollectionViewController.swift in Sources */,
+				3D5FA09B1C636A090065EEA1 /* QuizViewController.swift in Sources */,
 				711E10EA1C56572300A84B8B /* TableViewTutorial.swift in Sources */,
 				3D9EBD1C1C5A07370011780B /* Item.swift in Sources */,
+				3DFBA7591C610A2F00107B17 /* CustomButton.swift in Sources */,
+				3DD3C2F11C61DE8400C59196 /* TimeTable.swift in Sources */,
 				711E10BC1C56562900A84B8B /* AppDelegate.swift in Sources */,
+				3DFBA75B1C614E9B00107B17 /* BattiGayoViewController.swift in Sources */,
 				3DF59F801C5B75B600A9E310 /* RatingVIew.swift in Sources */,
 				3D92F6EB1C5DEB4300548D18 /* ItemRating.swift in Sources */,
 			);
@@ -531,6 +593,7 @@
 			baseConfigurationReference = D9D709E92C84D059BCE7D3BC /* Pods-technolearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = technolearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technotroop.technolearn;
@@ -543,6 +606,7 @@
 			baseConfigurationReference = 30BD31A57ECC187F5739E09B /* Pods-technolearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = technolearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technotroop.technolearn;

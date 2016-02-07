@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DesignableAndInspectable.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>technolearn.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3DCAB0D81C6098D400F891D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DCAB0E11C6098D400F891D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>711E10B71C56562900A84B8B</key>
 		<dict>
 			<key>primary</key>

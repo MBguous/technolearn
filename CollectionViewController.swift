@@ -35,8 +35,6 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 8
         
-        
-        
         return cell
     }
     

@@ -48,6 +48,16 @@
                ReferencedContainer = "container:technolearn.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3DCAB0E11C6098D400F891D3"
+               BuildableName = "DesignableAndInspectableTests.xctest"
+               BlueprintName = "DesignableAndInspectableTests"
+               ReferencedContainer = "container:technolearn.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

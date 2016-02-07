@@ -2,13 +2,13 @@
 //  AppDelegate.swift
 //  technolearn
 //
-//  Created by Anit Shrestha Manadhar on 1/25/16.
+//  Created by Mahesh Bura on 1/25/16.
 //  Copyright © 2016 Technotroop. All rights reserved.
 //
 
 import UIKit
 
-let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0) //Wenderlich Green
+//let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0) //Wenderlich Green
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        window?.tintColor = themeColor
+//        window?.tintColor = themeColor
         return true
     }
 

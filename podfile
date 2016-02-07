@@ -5,6 +5,7 @@
 
 target 'technolearn' do
 pod 'SCLAlertView'
+pod 'Alamofire', '~> 3.0'
 end
 
 target 'technolearnTests' do
